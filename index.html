@@ -1,213 +1,133 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        
-        <title>Survey Form</title>
-        
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <section class="container center">
-            <div class="main">
-                <header class="header">
-                    <h1>Survey Form</h1><br />
-                    <p>Feel Free to Answer The Questions Below Based On Your
-                        Own
-                        Expextations And Options.If You Are Not Convenient
-                        in
-                        Answering A Particular Question Please Skip it.</p>
-                    <br />
-                </header>
-                <form>
-                 <div class="flex-container">
-                   <div class="items left">
-                   <div class="items">
-                     <label id="name-label" for="name"> <h5>Your Name</h5> </label>
-                       <input
-                      type="text"
-                      name="name"
-                       id="name"
-                         class="form-control"
-                         placeholder="Enter your name"
-                         required
-                           />
-                             </div>
-                                <div class="items">
-                                <label id="email-label" for="email"> <h5>Your Email Address</h5> </label>
-                                     <input
-                                   type="email"
-                                    name="email"
-                                    id="email"
-                                    class="form-control"
-                                    placeholder="user@user.com"
-                                      required
-                                     />
-                                </div>
-                            <div class="items">
-                                <label id="number-label" for="mobile number"> <h5>Your Phone Number</h5> </label>
-                            <input
-                            type="mobile number"
-                             name="mobile"
-                             id="number"
-                               min="1000000000"
-                                 max="9999999999"
-                                 class="form-control"
-                                 placeholder="999999999"
-                                  />
-                                 </div>
-                              <div class="items">
-                         <h5>Where Do You Live?</h5>
-                      <select id="dropdown" name="role" class="form-control" required>
-                        <option disabled selected value>Select</option>
-                     <option value="Location0">Patna</option>
-                    <option value="Location1">Mumbai</option>
-                   <option value="Location2">Dehradun</option>
-                  <option value="Location3">Delhi</option>
-                <option value="Location4">Kolkata</option>
-                <option value="Location5">Jaipur</option>
-               <option value="Location6">Ranchi</option>
-              <option value="Location7">Motihari</option>
-             <option value="other">Other</option>
-            </select>
-             </div>
-                            <div class="items age">
-                                <form>
-                                    <fieldset>
-                                        <legend>Age</legend>
-                                        <div class="age">
-                                            <div class="age-left-section">
-
-                                                <input type="radio" id="first"
-                                                    name="age" value="15-20"
-                                                    checked>
-                                                <label for="first">15-20</label>
-
-                                                <input type="radio" id="second"
-                                                    name="age" value="20-30">
-                                                <label
-                                                    for="second">20-30</label>
-
-                                                <input type="radio" id="third"
-                                                    name="age" value="31-40">
-                                                <label
-                                                    for="third">31-40</label></div>
-
-                                            <div class="age-right-section">
-                                                <input type="radio" id="fifth"
-                                                    name="age" value="41-50">
-                                                <label for="fifth">41-50</label>
-
-                                                <input type="radio"
-                                                    id="noprefer"
-                                                    name="age"
-                                                    value="noprefer">
-                                                <label for="noprefer">Prefer not
-                                                    to
-                                                    say</label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </form>
-                            </div>
-
-                            <div class="items">
-                                 <label>
-                                    <h5>How would you rate your proficiency in
-                                        coding</h5>
-                                    </label><br /><br />
-                                <form>
-                                    <div class="proficiency">
-                                        <div>
-                                            <input type="radio" id="begineer"
-                                                name="proficient"
-                                                value="begineer">
-                                            <label
-                                                for="begineer">Begineer</label>
-                                        </div>
-                                        <div>
-                                            <input type="radio"
-                                                id="intermediate"
-                                                name="proficient"
-                                                value="intermediate">
-                                            <label
-                                                for="intermediate">Intermediate</label>
-                                        </div>
-                                         <div>
-                                            <input type="radio" id="advance"
-                                                name="proficient"
-                                                value="advance">
-                                            <label
-                                                for="advance">Advance</label>
-                                        </div>
-
-      
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-
-                        <div class="items right">
-                            <div class="items appereance">
-                                <div>
-                                    <label>
-                                        <h5>Have you Appeared in coding
-                                            test</h5>
-                                        </label><br /><br />
-                                </div>
-
-                                <div>
-                                    <input type="radio" name="appeared"
-                                        id="yes" />
-                                    <label for="yes">Yes</label>
-                                </div>
-                                <br />
-                                <div>
-                                    <input type="radio" name="appeared"
-                                        id="no" />
-                                    <label for="no">No</label>
-                                </div>
-                            </div>
-                            <div class="items passion">
-                                <label for="passion">
-                                    <h5>Discuss what drives your
-                                        passion for coding and your
-                                        inspiration</h5>
-                                    </label><br /><br />
-                                <textarea name="passion"
-                                    id="passion" rows="4"
-                                    cols="60">           </textarea>
-                            </div>
-                            <div class="items">
-                                <label for="challenges">
-                                    <h5>What are some of the
-                                        challenges you
-                                        face while
-                                        coding?</h5>
-                                    </label><br /><br />
-                                <textarea name="challenges"
-                                    id="challenges" rows="4"
-                                    cols="60">       </textarea>
-                            </div>
-                            <div class="items">
-                                <label for="understanding">
-                                    <h5>Please list the
-                                        data structure you
-                                        have strong understanding
-                                        of</h5>
-                                    </label><br /><br />
-                                <textarea name="understanding"
-                                    id="understanding" rows="4"
-                                    cols="60">      </textarea>
-                            </div>
-                            <div class="items">
-                                <input type="submit" id="submit-btn"
-                                    name="submit-btn"
-                                    value="Submit Form" />
-                            </div>
-                        </div>
-                    </div>
-                </form>
+<head>
+    
+    
+    <title>Survey Form</title>
+    
+    <link rel="stylesheet" href="style.css" type="text/css">
+   
+</head>
+<body>
+   <section class="container">
+    <h1>Survey Form</h1>
+    <p>Feel Free To Answer 
+        The Questions Below Based On Your Own Experience And Opinion.
+        If You Are Not Convenient In Answering A Particular Questions
+        Please Skip it By Answering "No".Every Answer Would Be Very Appreciated.
+        Thank You For Your Time.
+     </p>
+     <form>
+     <section class="subContainer">
+        <section class="leftContainer">
+        <label for="name" class="label">Your Name</label><br>
+        <input type="text" name="name" class="input" placeholder="Enter your name">
+        <br><label for="email" class="label">Your Email Address</label><br>
+        <input type="email" name="email" class="input" placeholder="user@user.com">
+        <br><label for="phoneNumber" class="label">Your Phone Number</label><br>
+        <input type="text" maxlength="10" name="phoneNumber" class="input" placeholder="9999999999">
+        <br><label for="location" class="label">Where Do You Live? </label><br>
+        <select name="location" class="input">
+            <option value=""disabled selected><p class="option">Select</p></option>
+            <option value="Delhi">Delhi</option>
+            <option value="Banglore">Banglore</option>
+            <option value="Jharkhand">Rampur</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bihar">goa</option>
+            <option value="Location0">Patna</option>
+            <option value="Location1">Gorakhpur</option>
+            <option value="Location2">Dehradun</option>
+            <option value="Location3">Muzaffarpur</option>
+            <option value="Location4">Kolkata</option>
+            <option value="Location5">Jaipur</option>
+            <option value="Location6">Ranchi</option>
+            <option value="Location7">Motihari</option>
+        </select>
+         <fieldset>
+                <legend>Age</legend>
+                <section class="subContainer">
+                    <section class="leftContainer">
+                <div>
+                    <input type="radio" name="Age" value="15-20">
+                    <label for="15-20" class="radioLabel">15-20</label>
+              </div>
+              <div>
+                <input type="radio" name="Age" value="20-30">
+                <label for="20-30" class="radioLabel">20-30</label>
+          </div>
+          <div>
+            <input type="radio" name="Age" value="30-40">
+            <label for="30-40" class="radioLabel">30-40</label>
+      </div>
+    </section>
+    <section class="rightContainer">
+        <div>
+            <input type="radio" name="Age" value="41-50">
+            <label for="41-50" class="radioLabel">41-50</label>
+      </div>
+      <div>
+        <input type="radio" name="Age" value="Prefer not to say">
+        <label for="Prefer not to say" class="radioLabel">Prefer not to say</label>
+  </div>
+    </section>
+    </section>
+        </fieldset>
+        <p class="topicPara">How would you rate your proficiency in coding</p>
+        <section>
+        <div>
+            <input type="radio" name="level" value="Beginner">
+            <label for="Beginner" class="radioLabel">Beginner</label>
+      </div>
+      <div>
+        <input type="radio" name="level" value="Intermediate">
+        <label for="Intermediate" class="radioLabel">Intermediate</label>
+  </div>
+     <div>
+         <input type="radio" name="level" value="Advance">
+         <label for="Advance" class="radioLabel">Advance</label>
+     </div>
+    </section>
+    </section>
+        <section class="rightContainer">
+            <section>
+            <p class="topicPara">Have You Ever Appered in any coding contest?</p>
+            <div>
+                <input type="radio" name="contest" value="Yes">
+                <label for="Yes" class="radioLabel">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="contest" value="No">
+                <label for="No" class="radioLabel">No</label>
             </div>
         </section>
-    </body>
+        <section>
+            <label for="discuss"><p class="topicPara">Discuss what drives your passion for 
+                coding and outline your aspirations
+                in the field.</p>
+            </label>
+            <textarea name="discuss" rows="5" cols="60"></textarea>
+
+        </section>
+        <section>
+            <label for="challenge"><p class="topicPara"> What are some of the challenges you face
+                while coding?
+            </p>
+            </label>
+            <textarea name="challenge" rows="5" cols="60"></textarea>
+
+        </section>
+        <section>
+            <label for="ds"><p class="topicPara">Please list the Data Structures you 
+                have a strong understanding of. </p>
+            </label>
+            <textarea name="ds" rows="4" cols="60"></textarea>
+
+        </section>
+       <button type="submit" id="btn">Submit Form</button>
+        </section>
+     </section>
+    </form>
+   </section> 
+</body>
 </html>
