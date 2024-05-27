@@ -1,107 +1,70 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-background: rgb(151, 246, 146);
+body{
+    background: rgb(151, 246, 146);
   background: linear-gradient(
     0deg,
     rgb(60, 188, 54) 0%,
     rgb(133, 207, 158) 100%
   );
-  
-  width: 100%;
-  height: auto;
-  padding: 1rem;
+    padding: 30px; 
+}
+.container{
+    background-color: white;
+    width: 95%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+}
+h1{
+    color: green;
+    font-size: 30px;
+    margin-left: 5px;
 }
 
-h1 {
-  color: rgb(14, 154, 14);
+.subContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
 }
-
-p {
-  word-spacing: 0.2rem;
+.leftContainer{
+    width: 50%;
 }
-
-.main {
-  margin: 10rem 0;
-  padding: 1rem;
-  border: 1px solid black;
-  width: auto;
-  border-radius: 1rem;
-  background-color: #CDD6CD;
+.rightContainer{
+    width: 50%;
+    margin-left: 20px;
 }
-
-b {
-  font-size: 1.5rem;
+.label{
+    font-weight: bold;
+    font-size: 20px;
 }
-
-.flex-container {
-  display: flex;
-  /* flex-direction: row;
-  flex-wrap: wrap; */
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.left,
-.right {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-input,
-select,
-textarea {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 5px;
-  color: rgb(57, 129, 52);
-}
-
-.age {
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem;
-  gap: 1rem;
-}
-
-.age-left-section,
-.age-right-section {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
+.input{
+    width: 80%;
+    padding: 8px;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 fieldset {
-  width: 20rem;
-  border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 25px;
+    width: 78%;
 }
-
-legend {
-  margin-left: 1rem;
+.radioLabel{
+    font-size: 18px;
 }
-
-.proficiency {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+.topicPara{
+    font-size: 20px;
 }
-
-.appereance {
-  gap: 1rem;
+.lebel1{
+    font-weight: bold;
 }
-
-#submit-btn {
-  width: 100%;
-  background-color: green;
-  color: white;
+#btn{
+    background-color: green;
+    width: 90%;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    border-color: white;
 }
